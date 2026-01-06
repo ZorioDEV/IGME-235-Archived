@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aim Trainer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pixi.js/7.2.4/pixi.min.js"></script>
+</head>
+<body>
+    <!-- Game Screen -->
+    <div id="gameScreen" class="screen"></div>
+
+    <!-- HUD -->
+    <div id="hud" class="hud">
+        <div class="hud-left">
+            <div class="hud-label">HIGH SCORE</div>
+            <div id="highScore" class="hud-value">0</div>
+        </div>
+        <div class="hud-center">
+            <div class="hud-label">TIME</div>
+            <div id="timer" class="hud-value">30.0s</div>
+        </div>
+        <div class="hud-right">
+            <div class="hud-label">SCORE</div>
+            <div id="score" class="hud-value">0</div>
+        </div>
+    </div>
+
+    <!-- Main Menu -->
+    <div id="menuOverlay" class="overlay active">
+        <div class="menu-panel">
+            <h1 class="game-title">AIM TRAINER</h1>
+            <div class="menu-content">
+                <button id="startBtn" class="menu-btn">START GAME</button>
+                <button id="leaderboardBtn" class="menu-btn">LEADERBOARD</button>
+                <button id="soundToggleBtn" class="menu-btn">SOUND: ON</button>
+                <a href="about.html" class="menu-btn link-btn">ABOUT</a>
+            </div>
+            <div class="game-info">
+                <p>Hit targets as fast as you can!</p>
+                <p>3 targets • 30 seconds • Score +10 per hit</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaderboard -->
+    <div id="leaderboardPanel" class="side-panel">
+        <div class="panel-header">
+            <h2>LEADERBOARD</h2>
+        </div>
+        <div class="panel-content">
+            <div id="leaderboard" class="leaderboard">
+                <div class="loading">Loading leaderboard...</div>
+            </div>
+            <div class="panel-actions">
+                <button id="clearScoresBtn" class="action-btn">Clear Scores</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Over -->
+    <div id="gameOverOverlay" class="overlay">
+        <div class="menu-panel">
+            <h2>GAME OVER</h2>
+            <div class="game-stats">
+                <div class="stat-row">
+                    <span class="stat-label">FINAL SCORE</span>
+                    <span id="finalScore" class="stat-value">0</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">ACCURACY</span>
+                    <span id="finalAccuracy" class="stat-value">100%</span>
+                </div>
+                <div class="stat-row">
+                    <span class="stat-label">TARGETS HIT</span>
+                    <span id="targetsHit" class="stat-value">0</span>
+                </div>
+            </div>
+            <div class="menu-content">
+                <button id="playAgainBtn" class="menu-btn">PLAY AGAIN</button>
+                <button id="menuBtn" class="menu-btn">MAIN MENU</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Scripts -->
+    <script src="js/utils.js"></script>
+    <script src="js/Target.js"></script>
+    <script src="js/Leaderboard.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

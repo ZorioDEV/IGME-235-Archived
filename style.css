@@ -1,0 +1,82 @@
+body {
+    margin: 0 auto;
+    width: 70vw;
+    font-family: Arial, sans-serif;
+    background-color: #FEFAE0 ;
+    padding: 2rem
+}
+header {
+    background-color: #283618;
+    color: #FEFAE0;
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+}
+main {
+    max-width: 60vw;
+    margin: 0 auto;
+}
+hr {
+    border-top: 5px solid #283618;
+    border-radius: 10px;
+}
+
+#about {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    align-items: center;
+}
+#profile-photo {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    border: 3px solid #936639;
+}
+#bio {
+    min-width: 300px;
+}
+#bio h2 {
+    color: #936639;
+    margin-bottom: 1rem;
+}
+#bio p {
+    color: #FEFAE0;
+    background-color: #606C38;
+    padding: 1.5rem;
+    border: 3px solid #936639;
+    border-radius: 10px;
+}
+
+#projects {
+    margin-bottom: 3rem;
+}
+#projects h2 {
+    color: #936639;
+    margin-bottom: 1.5rem;
+}
+.project-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.project-link {
+    display: block;
+    background-color: #606C38;
+    color: #FEFAE0;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: #283618;
+    color: #FEFAE0;
+    border-radius: 10px;
+}

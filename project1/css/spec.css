@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    font-size: 20px;
+}
+
+.container {
+    display: flex;
+}
+
+/* Column 1 */
+.col-1 {
+    width: 4%;
+    background-color: black;
+}
+
+/* Columns 2 & 3 */
+.columns-2-3 {
+    width: 64%;
+    display: flex;
+    flex-direction: column;
+}
+
+.separate-content {
+    display: flex;
+    width: 100%;
+}
+
+
+.col-2 {
+    width: 50%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Column 3 */
+.col-3 {
+    width: 50%;
+    padding: 0 15px;
+    position: relative;
+}
+
+.col-3 .content-section {
+    display: block;
+}
+
+.col-3 .text-block {
+    display: block;
+}
+
+.col-3 .floating-image {
+    width: 500px;
+    height: 500px;
+    margin-right: -355px;
+    margin-bottom: 20px;
+    float: right;
+    shape-outside: margin-box;
+}
+
+/* Column 4 */
+.col-4 {
+    width: 32%;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.col-4 .spacer-500 {
+    height: 520px;
+}
+
+/* Images */
+.image-placeholder {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+    font-size: 14px;
+    border: 1px dashed black;
+}
+
+.img-325x400 {
+    width: 325px;
+    height: 400px;
+}
+
+.img-500x500 {
+    width: 500px;
+    height: 500px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+}
+
+.img-325x300 {
+    width: 325px;
+    height: 300px;
+}
+
+.divider-wide {
+    height: 2px;
+    background-color: grey;
+    width: 100%;
+    margin: 10px 0;
+}
+
+/* Text Styles */
+.text-description {
+    font-weight: bold;
+    font-size: 14px;
+}
+.text-block-wide {
+    width: 100%;
+    padding: 0 15px;
+    font-size: 32px;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+/* Footer*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    border-top: 1px solid grey;
+    margin-top: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 10px;
+}
+
+.footer-text {
+    text-align: right;
+    font-size: 14px;
+    position: absolute;
+    right: 0;
+}

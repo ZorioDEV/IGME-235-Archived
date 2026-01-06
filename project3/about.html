@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 3 About: Aim Trainer</title>
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
+    <header>
+        <h1>Project 3 Proposal: Aim Trainer</h1>
+    </header>
+
+    <section>
+        <h2>Concept</h2>
+        <p>A fast-paced click aim trainer where players must hit as many targets as possible in 30 seconds. Three targets are always on screen and when one is hit, it instantly reappears elsewhere. There is also a leaderboard to track all of their top 10 highest scores. This is a simple, addictive, and skill-based game.</p>
+    </section>
+
+    <section>
+        <h2>Genre</h2>
+        <ul>
+            <li><strong>Arcade</strong></li>
+            <li><strong>Aim Trainer</strong> (similar to FPS warm-up tools)</li>
+            <li><strong>Clicker / Reaction</strong></li>
+        </ul>
+    </section>
+    
+    <section>
+        <h2>Aesthetics</h2>
+        <ul>
+            <li><strong>Graphics:</strong> Clean, minimalist UI with gradients and shawdows.</li>
+            <li><strong>Style:</strong> Dark theme with smooth animations and effects on hit.</li>
+            <li><strong>Sound:</strong> Satisfying click/hit sounds for targets and UI.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Gameplay</h2>
+        <h3>Controls:</h3>
+        <ul>
+            <li><strong>Mouse clicks</strong> to hit targets.</li>
+        </ul>
+        <h3>Mechanics:</h3>
+        <ul>
+            <li>3 targets on screen at all times.</li>
+            <li>Targets reposition instantly when hit.</li>
+            <li>30-second countdown timer.</li>
+            <li>Score increases by 10 per hit.</li>
+            <li>Game ends when timer reaches 00:00.</li>
+            <li>Final score displayed with option to restart/play again.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Mockups</h2>
+        <div class="mockup">
+            <div>
+                <h3>Gameplay</h3>
+                <img src="media/mockup_Gameplay.png" alt="Gameplay mockup">
+            </div>
+            <div>
+                <h3>Menu</h3>
+                <img src="media/mockup_Menu.png" alt="Menu mockup">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Technical</h2>
+
+        <h3>Main:</h3>
+        <ul>
+            <li><strong>Engine:</strong> PixiJS.</li>
+            <li><strong>Assets:</strong> Target sprites and sound effects.</li>
+            <li><strong>Code Structure:</strong> Separate files for main, Target class, Leaderboard class, and utilities.</li>
+        </ul>
+        
+        <h3>ES6 Classes:</h3>
+        <ul>
+            <li><code>Target.js</code> Manages target positioning, hit detection, and animation</li>
+            <li><code>Leaderboard.js</code> Handles score storage, ranking, and localStorage persistence</li>
+            <li><code>main.js</code> Main game controller managing state, timing, and user interactions</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Created by: Tyler Bye</p>
+    </footer>
+</body>
+</html>

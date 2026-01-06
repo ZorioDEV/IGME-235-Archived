@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aniDEX - Anime Explorer</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="banner">
+        <img src="media/banner.jpg" alt="Anime Explorer Banner" class="banner-image">
+    </div>
+
+    <header>
+        <div class="header-left">
+            <button id="home-btn" class="home-btn" title="Go to Home">
+                <img src="media/homebutton.png" alt="Home" class="home-icon">
+            </button>
+            <div class="logo">aniDEX</div>
+        </div>
+        <div class="search-container">
+            <input type="text" id="search-input" placeholder="Search for anime...">
+            <button id="search-btn">Search</button>
+        </div>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <h3>Filters</h3>
+            <div class="filter-group">
+                <label for="type-filter">Type</label>
+                <select id="type-filter">
+                    <option value="">All Types</option>
+                    <option value="tv">TV</option>
+                    <option value="movie">Movie</option>
+                    <option value="ova">OVA</option>
+                    <option value="special">Special</option>
+                    <option value="ona">ONA</option>
+                    <option value="music">Music</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="genre-filter">Genre</label>
+                <select id="genre-filter">
+                    <option value="">All Genres</option>
+                    <option value="1">Action</option>
+                    <option value="2">Adventure</option>
+                    <option value="4">Comedy</option>
+                    <option value="8">Drama</option>
+                    <option value="10">Fantasy</option>
+                    <option value="14">Horror</option>
+                    <option value="7">Mystery</option>
+                    <option value="22">Romance</option>
+                    <option value="24">Sci-Fi</option>
+                    <option value="36">Slice of Life</option>
+                    <option value="30">Sports</option>
+                    <option value="37">Supernatural</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="sort-by">Sort By</label>
+                <select id="sort-by">
+                    <option value="members">Popularity</option>
+                    <option value="score">Rating</option>
+                    <option value="title">Title</option>
+                    <option value="start_date">Release Date</option>
+                    <option value="episodes">Episodes</option>
+                </select>
+            </div>
+            
+            <div class="filter-group">
+                <label for="sort-order">Sort Order</label>
+                <select id="sort-order">
+                    <option value="desc">Descending</option>
+                    <option value="asc">Ascending</option>
+                </select>
+            </div>
+            
+            <div class="favorites-section">
+                <h3>Favorites</h3>
+                <div class="favorites-list" id="favorites-list">
+                </div>
+                <button id="clear-favorites" class="btn small secondary">Clear All Favorites</button>
+            </div>
+        </aside>
+        
+        <main class="main-content">
+            <div class="results-header">
+                <h2 id="results-title">Most Popular Anime</h2>
+                <div class="results-count" id="results-count"></div>
+            </div>
+            
+            <div class="spinner" id="spinner"></div>
+            
+            <div class="results-grid" id="results-grid">
+            </div>
+            
+            <div class="pagination">
+                <button id="prev-btn" disabled>Previous</button>
+                <div class="page-info" id="page-info">Page 1</div>
+                <button id="next-btn">Next</button>
+            </div>
+        </main>
+    </div>
+
+    <div id="details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <div id="modal-body" class="modal-body">
+            </div>
+        </div>
+    </div>
+
+    <a href="documentation.html" class="doc-link">Project Documentation</a>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

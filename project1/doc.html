@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1, h2 {
+            color: grey;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;            
+        }
+        .section {
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: whitesmoke;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Documentation for Project 1</h1>
+
+    <div class="section">
+        <h2>Proposal:</h2>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            For the design, I chose one of the preset PDF files named "thespot" and thought the overall design 
+            layout would benefit my idea. I plan on making a little information brochure about Kyoto, Japan. Therefore, 
+            the number of images surrounding the text would be enough visual representation of the place. Also, the fact 
+            that there is a descriptions below each image will fit nicely with my goal.  The color scheme of the preset 
+            design is a bit too basic and I would like to match it closer to the flag or other traditional items to 
+            match from Kyoto, Japan. The colors of their flag are purple (942B9D), white (FFFFFF), and gold (FFCC00). 
+            As for the text, it is a sufficient amount of text to give a brief overview (history, attractions, culture, 
+            etc.)and even allows for a quote, which I think is a nice touch. The font choices are also good, but I 
+            would like to add some sort of header that spans the whole top of the page to give it a more complete 
+            look and to make it clear what the brochure is about. Additionally, I would like some of the text to be 
+            bolded and a color change to emphasize and highlight certain parts of names or places.
+
+            <br><br>
+            <a href="src/thespot.pdf" target="_blank">Link to the preset PDF design of "thespot".</a>
+            <br><br>
+            <img src="media/KyotoFlag.webp" alt="Image of Kyoto's Flag." width="500">
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Build to Spec:</h2>
+        
+        <h3>Design Approach</h3>
+        <p>
+            I focused on recreating the core layout structure of the "thespot" design:
+        </p>
+        <ul>
+            <li>4-column desktop layout with varying widths</li>
+            <li>Multiple image sizes (325x400, 500x500, 325x300)</li>
+            <li>Mixed content sections with both separate and combined layouts</li>
+            <li>Floating image effect in one column</li>
+        </ul>
+        
+        <h3>Layout Strategy</h3>
+        <p>
+            Used CSS Grid for the main 4-column structure and Flexbox for content organization within sections. The layout balances:
+        </p>
+        <ul>
+            <li>Fixed-width spacer columns</li>
+            <li>Flexible content areas</li>
+            <li>Consistent spacing between elements</li>
+        </ul>
+        
+        <h3>Key Challenges</h3>
+        <ul>
+            <li>Managing the complex nested column structure</li>
+            <li>Implementing the floating image effect without messing with other flows</li>
+            <li>Maintaining proportional relationships between elements</li>
+        </ul>
+        
+        <h3>Next Steps</h3>
+        <p>
+            For Phase 2, I'll convert the 4-column layout to a single column on mobile by:
+        </p>
+        <ul>
+            <li>Stacking all content vertically</li>
+            <li>Adjusting image sizes for mobile screens</li>
+            <li>Simplifying the floating image effect</li>
+            <li>Removing column 1 (verical divider image)</li>
+        </ul>
+
+        <img src="media/mobileSketch.png" alt="Image of Responsive Design Plan Mobile Sketch." width="200">
+
+        <p>
+            Additionally, in Phase 2, I'll adapt this layout for Kyoto content by adding real images, implementing the responsive design, and applying the Kyoto color scheme (purple, white, gold).
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Final:</h2>
+        
+        <h3>Adaptation to Kyoto Content</h3>
+        <p>
+            Transformed the design into a Kyoto cultural guide by:
+        </p>
+        <ul>
+            <li>Implementing the Kyoto flag color scheme (purple #942B9D, gold #FFCC00)</li>
+            <li>Adding a header with Kyoto flag background and brushstroke text</li>
+            <li>Replacing placeholder content with Kyoto information and images</li>
+        </ul>
+        
+        <h3>Responsive Design</h3>
+        <ul>
+            <li>Desktop (Defualt): simular to original spec</li>
+            <br>
+            <img src="media/Desktop_Layout.png" alt="Image of Desktop Layout." width="200">
+            <br><br>
+
+            <li>Tablet (1024px): hides column 4 and adjusts layout</li>
+            <br>
+            <img src="media/Tablet_Layout_01.png" alt="Image of Tablet Layout." width="200">
+            <img src="media/Tablet_Layout_02.png" alt="Image of Tablet Layout." width="200">
+            <br><br>
+
+            <li>Mobile (768px): single column layout</li>
+            <br>
+            <img src="media/Mobile_Layout_01.png" alt="Image of Mobile Layout." width="200">
+            <img src="media/Mobile_Layout_02.png" alt="Image of Mobile Layout." width="200">
+            <br><br>
+
+            <li>Maintained all content accessibility across all screen sizes and no overlapping content</li>
+        </ul>
+        
+        <h3>Links & Resources</h3>
+        <ul>
+            <li><strong>Original Design:</strong> <a href="src/thespot.pdf" target="_blank">thespot.pdf</a></li>
+            <li><strong>Build to Spec:</strong> <a href="spec.html" target="_blank">spec.html</a></li>
+            <li><strong>Final Project:</strong> <a href="index.html" target="_blank">index.html</a></li>
+            <li><strong>Fonts:</strong> 
+                <a href="https://fonts.google.com/specimen/Crimson+Text" target="_blank">Crimson Text</a> & <a href="https://fonts.google.com/specimen/Playfair+Display" target="_blank">Playfair Display</a>
+            </li>
+        </ul>
+        
+        <h3>Goals & Audience</h3>
+        <p>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            This site is meant to be an informational brochure designed for tourists planning to visit Kyoto or who just want to know more about the culture. It could also be for students researching Japanese culture and history. In general, this would be a great website for any individual wanting to learn more about traditional Japanese arts, customs, and history. The design directly reflects Kyoto's flag, with the purple and gold color scheme, and the readability of a history-style textbook.
+        </p>
+        
+        <h3>Other/Extra Notes</h3>
+        <ul>
+            <li>Floating image layout using CSS float and shape-outside got complicated super quickly</li>
+            <li>Responsive design with multiple breakpoints was also challenging to maintain conistency</li>
+            <li>Linear-gradient and box-shadow really enhanced the overall feel</li>
+        </ul>
+    </div>
+
+</body>
+</html>
